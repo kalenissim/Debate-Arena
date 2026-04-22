@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import { useState, useEffect } from "react";
 import { initializeApp } from "firebase/app";
 import {
@@ -10,7 +11,6 @@ import {
   updateDoc, increment, query, orderBy, onSnapshot,
   serverTimestamp, getDoc, setDoc
 } from "firebase/firestore";
-
 // ── Firebase config ──────────────────────────────────────────────
 const firebaseConfig = {
   apiKey: "AIzaSyA7mZm--urrUdfmfvllSQF_DVmqyXqbVmg",
